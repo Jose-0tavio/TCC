@@ -1,8 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
 body{ 
 
     background-image:url("background.png"); 
-   
-    display: flex; 
    
     justify-content: center; 
    
@@ -10,33 +12,43 @@ body{
    
     color: aliceblue;
 } 
-
-.row{
+header {
+    height: calc(100vh - 150px);
+    background-image: url("background.header.jpg");
     text-align: center;
-    display: flex;
+}	
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.row{
+    
+    margin-left: 25%;
 }
 @media screen and (max-width: 1920px) {
     .row {
-        text-align: center;
+        margin-left: 25%;
     }
   }
 
   @media screen and (max-width: 1919px) {
     .row {
-        text-align: center;
+        margin-left: 25%;
     }
 
   }
 
 @media screen and (max-width: 1332px) {
     .row {
-        text-align: center;
+        margin-left: 50%;
     }
   }
 
 
 @media screen and (max-width: 640px) {
     .row {
-        text-align: center;
+        margin-left: 50%;
     }
   }

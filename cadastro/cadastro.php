@@ -13,7 +13,7 @@ $validacao = false;
  
  $dtoAluno = new alunoResource();
  $dtoAluno->setConn($db);
- $alunos = $dtoAluno->findAll();
+ $alunos = $dtoAluno;//->findAll();
  
 
  if ($_POST['nome'] != null){
@@ -25,7 +25,7 @@ $validacao = false;
  if ($_POST['data']!= null){
     $data = $_POST['data'];
  }else{
-    echo "<div class='alert alert-info'>DATA NAO PODE SER VAZIO/div>";
+    echo "<div class='alert alert-info'>DATA NAO PODE SER VAZIO</div>";
  }
  if ($_POST['email']!= null){
     $email = $_POST['email'];
